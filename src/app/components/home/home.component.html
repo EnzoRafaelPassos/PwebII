@@ -1,6 +1,21 @@
 <br>
 <h1 style="margin-left: 10px;">Seja Bem vindo ao Curso de Angular</h1>
 <br>
+<h4 class="text-danger" style="margin-left: 20px;">{{anuncio}}</h4>
+
+<div class="card" style="width: 18rem; margin-left: 20px;">
+  <img [src]="foto" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">
+      {{nomeProduto}}
+      <span *ngIf ="promocao" class="badge badge-success">Promoção</span>
+
+    </h5>
+    <p class="card-text">Identificação : {{idProduto}}</p>
+    <a href="#" class="btn btn-primary float-right">R$ {{precoProduto}}</a>
+  </div>
+</div>
+<br>
 <!-- linha -->
 <div class="row">
   <!-- coluna -->
