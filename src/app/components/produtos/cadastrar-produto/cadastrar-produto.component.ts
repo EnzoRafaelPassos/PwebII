@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-cadastrar-produto',
   templateUrl: './cadastrar-produto.component.html',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastrarProdutoComponent implements OnInit {
 
+    nome: string = '';
+    validade: string = '';
+    preco: number = 0;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  salvarProduto() : void {
+    console.log("Nome:", this.nome);
+    console.log("Validade:", this.validade);
+    console.log("Preco:", this.preco);
+    alert("Salvo com sucesso!");
   }
 
 }
